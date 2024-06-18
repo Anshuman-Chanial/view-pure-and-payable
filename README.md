@@ -1,0 +1,1 @@
+# view-pure-and-payable
