@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.26;
+
+contract functionTypesExample {
+	uint etherValue;
+	address owner;
+	
+	constructor() {
+		owner = msg.sender;
+	}
+	
+	function getval() public view returns (uint) {
+		return etherValue;
+	}
+	
+	function multiply(uint a, uint b) public pure returns (uint) {
+		return a * b;
+	}
+	
+	function store(uint eth) public payable {
+		etherValue += eth;
+	}
+}
